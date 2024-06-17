@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="stylesheets/my-custom-theme.css" />
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.2/jquery.mobile.structure-1.1.2.min.css" /> 
+    
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+    <script src="javascripts/main.js"></script>
+
+
+    <title>Nathan Bug Collecting Website</title>
+</head>
+<body>
+    <!-- ======================================================================================== -->
+    
+    <!-- =================================== -->
+    <div data-role="page" id="home" data-theme='a'>
+        
+
+        <!-- header --> 
+        <div data-role="header" data-theme='a'>
+            <h2>Nathan Bug Collecting Website</h2>
+        
+            <div data-role="navbar">
+                <ul>
+                <li><a href="#add" data-transition="flip">Add</a></li>
+                <li><a href="#collection" data-transition="flip">Collection</a></li>
+                <li><a href="#quiz" data-transition="flip">Quiz</a></li>
+                </ul>
+            </div><!-- /navbar -->
+        </div>  
+        <!-- =================================== -->
+
+        <!-- =================================== -->
+        <!-- content -->
+        <div data-role="content" data-theme='a'>
+            <h2>The cool website to store any details about your favorite bugs!</h2>>
+            <!--<img src="./images/calc.png" alt="picture of a caclculator">-->
+
+        </div>
+       <!-- =================================== -->
+
+        <!-- =================================== -->
+          <!-- notes footer --> 
+          <div data-role="footer" data-theme='a'>
+            <h3>Copyrigtht 2024 by Nathan Ross</h3>
+        </div>
+        <!-- =================================== -->
+    </div>
+   <!-- ======================================================================================== -->
+
+
+   <!-- ======================================================================================== -->
+    <div data-role="page" id="add" data-theme='a'>
+        
+        <!-- =================================== -->
+        <!-- header --> 
+        <div data-role="header" data-theme='a'>
+            <h2>Add Bug</h2>
+
+            <div data-role="navbar" >
+                <ul>
+                 <li><a href="#home"data-transition="slideup">Home</a></li>
+                 <li><a href="#collection" data-transition="slideup">Collection</a></li>
+                 <li><a href="#quiz" data-transition="slideup">Quiz</a></li>
+                </ul>
+            </div><!-- /navbar -->
+
+        </div>
+        <!-- =================================== -->
+
+        <!-- =================================== -->
+        <!-- content -->
+        <div data-role="content" data-theme='a'>
+            <h2>Enter bug details</h2>
+
+                <h3>Bug Name</h3>
+                <input type="text" id="bugName">
+                <h3>Bug Image</h3>
+                <input type="text" id="bugImage">
+                <h3>Bug Weight</h3>
+                <input type="text" id="bugWeight">
+                <h3>Bug Size</h3>
+                <input type="text" id="bugSize">
+                <button id="submitBug" type="button" >ADD</button>  <br />
+        </div>
+        <!-- =================================== -->
+
+
+        <!-- =================================== -->
+        <!-- notes footer --> 
+        <div data-role="footer" data-theme='a'>
+            <h3>Copyrigtht 2024 by Nathan Ross</h3>
+        </div>
+        <!-- =================================== -->
+    </div>
+     <!-- ======================================================================================== -->
+
+
+    
+      <!-- ======================================================================================== -->
+    <div data-role="page" id="collection" data-theme='a'>
+        
+          <!-- =================================== -->
+        <!-- header --> 
+        <div data-role="header" data-theme='a'>
+            <h2>Bug Collection</h2>
+       
+
+            <div data-role="navbar" >
+                <ul>
+                <li><a href="#home" data-transition="slidedown">Home</a></li>
+                <li><a href="#add"data-transition="slidedown">Add</a></li>
+                <li><a href="#quiz"data-transition="slidedown">Quiz</a></li>
+                </ul>
+            </div><!-- /navbar -->
+        </div>
+           <!-- =================================== -->
+
+          <!-- =================================== -->
+        <!-- content -->
+        <div data-role="content" data-theme='a'>
+            <h2>Your bug collection</h2>
+            <ul id="unorderedBugList">???</ul>
+            
+        </div>
+           <!-- =================================== -->
+
+           <!-- =================================== -->
+        <!-- notes footer --> 
+        <div data-role="footer" data-theme='a'>
+            <h3>Copyrigtht 2024 by Nathan Ross</h3>
+        </div>
+        <!-- =================================== -->
+
+    </div>
+
+
+    <div data-role="page" id="quiz" data-theme='a'>
+        
+        <!-- =================================== -->
+      <!-- header --> 
+      <div data-role="header" data-theme='a'>
+          <h2>Bug Quiz</h2>
+     
+
+          <div data-role="navbar" >
+              <ul>
+              <li><a href="#home" data-transition="slidedown">Home</a></li>
+              <li><a href="#add"data-transition="slidedown">Add</a></li>
+              <li><a href="#collection"data-transition="slidedown">Collection</a></li>
+              </ul>
+          </div><!-- /navbar -->
+      </div>
+         <!-- =================================== -->
+
+        <!-- =================================== -->
+      <!-- content -->
+      <div data-role="content" id="question" data-theme='a'>
+          <h2 id="quizQuestion"></h2>
+          <img id="quizImage" src="" alt="">-->
+
+              <input type="string" id="userAnswer">
+              <button id="submitAnswer" type="button" >Submit</button>  <br />
+      </div>
+         <!-- =================================== -->
+
+         <!-- =================================== -->
+      <!-- notes footer --> 
+      <div data-role="footer" data-theme='a'>
+          <h3>Copyrigtht 2024 by Nathan Ross</h3>
+      </div>
+      <!-- =================================== -->
+
+  </div>
+     <!-- ======================================================================================== -->
+    
+    
+</body>
+</html>
